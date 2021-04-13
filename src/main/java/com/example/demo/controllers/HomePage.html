@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>WICKET</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+	</head>
+	<body class="d-flex flex-column min-vh-100">
+	
+	<div class="header jumbotron text-center">
+		<h1 id="titulo">El nuevo metacritic</h1>
+	</div>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<a class="navbar-brand" href="#">Titulo</a>
+		 <button class="navbar-toggler" type="button" data-toggle="collapse" data-targe="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link1</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link2</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link3</a>
+				</li>    
+			</ul>
+		</div>  
+	</nav>
+	
+	
+	
+ <div wicket:id="modalAnyadir"></div>
+ 	<div class="container-fluid">
+ 		<div class="row">
+ 
+ <nav class="col-md-2 bg-light sidebar" >
+				<div class="sidebar-sticky">
+					<ul class="nav flex-column">
+						<li class="nav-item">
+							<a class=" nav-link active" href="#"><i class="bi bi-bag-check"></i> Link1</a>
+						</li>
+						<li class="nav-item">
+							<a class=" nav-link" href="#"><i class="bi bi-bar-chart"></i> Link2</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			
+ <div class="col-md-9 ml-sm-auto col-lg-10">
+    <button wicket:id="showModalAnyadir" class="boton btn btn-primary">Añadir</button>
+    
+<form wicket:id="formularioTabla">
+
+<span wicket:id="group">
+<h1 id="cosa">Juegos</h1>
+<div class="table-responsive ">
+
+<table wicket:id="container" class="table table-striped table-light">
+  <thead>
+    <tr >
+      <th wicket:id="tituloTitulo" class="col-5"></th>
+      <th wicket:id="anyoTitulo" class="col-3"></th>
+      <th wicket:id="puntuacionTitulo" id="thNota" class="col-3"></th>
+      <th wicket:id="eliminarTitulo" class="col-1"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr wicket:id="listView" >
+      <td class="col-3 "><a wicket:id="link" href="#"><span wicket:id="tituloComponent" ></span></a></td>
+      <td wicket:id="anyoComponent" class="col-3 "></td>
+      <td  class="col-3"><div class="progress position-relative" id="fondoBarra" >
+						<div class="progress-bar progress-bar-striped" role="progressbar" wicket:id="barra" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+						<div wicket:id="puntuacionComponent" class="justify-content-center d-flex position-absolute w-100 notas"></div>
+					</div></td>
+      <td class="col-3 components"><input wicket:id="check" type="checkbox" /></td>
+    </tr>
+  </tbody>
+</table>
+	<div class="d-flex justify-content-center">
+		<span wicket:id="navigator"></span>
+	</div>
+</div>	
+	</span>	
+	
+		<button wicket:id="buttonEliminar"  type="submit" class="boton btn btn-warning">Eliminar</button>
+		</form>
+		
+		
+	
+		
+		 <div wicket:id="modalEditar"></div>
+		 
+		 
+		 	</div>
+		 </div>
+  </div>
+		
+	</body>
+</html>

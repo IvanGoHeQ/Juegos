@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<title>Editar</title>
+<meta charset="UTF-8">
+<style type="text/css">
+body {
+	font-family: verdana, sans-serif;
+	font-size: 82%;
+	background-color: white;
+}
+</style>
+</head>
+<body>
+	<form wicket:id="formulario">
+		Titulo: <input type="text" wicket:id="titulo" />
+		 <br /> 
+		Año de publicacion: <input type="number" wicket:id="anyo" />
+		 <br /> 
+		Puntuacion: <input type="number" wicket:id="puntuacion" />
+		 <br />
+		<button type="submit" wicket:id="botonEditar">Editar</button>
+	</form>
+</body>
+</html>
