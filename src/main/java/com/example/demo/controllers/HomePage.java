@@ -75,7 +75,7 @@ public class HomePage extends WebPage {
 
 	public HomePage() {
 		
-		
+		System.out.println("ASIDOAS");
 
 		// Ventana para editar
 		final ModalWindow modalEditar;
@@ -120,7 +120,7 @@ public class HomePage extends WebPage {
 				        }else if(juego.getPuntuacion()<2.5) {
 				        	clase= clase+" bg-danger";
 				        	tag.getAttributes().put("class", clase);
-				        }else if(juego.getPuntuacion()>9) {
+				        }else if(juego.getPuntuacion()>=9) {
 				        	clase= clase+" bg-success";
 				        	tag.getAttributes().put("class", clase);
 				        }
